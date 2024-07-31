@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <div class="container gradient-bg">
+        <h1 class="heading">Countdown Timer</h1>
+        <div id="countdown" class="countdown">
+            <div class="countdown-item">
+                <span id="days" class="countdown-value">0</span>
+                <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-item">
+                <span id="hours" class="countdown-value">0</span>
+                <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-item">
+                <span id="minutes" class="countdown-value">0</span>
+                <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-item">
+                <span id="seconds" class="countdown-value">0</span>
+                <span class="countdown-label">Seconds</span>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="start-container">
+                <label for="start-input">Countdown Start Time:</label>
+                <input type="datetime-local" id="start-input" required>
+            </div>
+            <div class="buttons">
+                <button id="start-button">Start</button>
+                <button id="stop-button">Stop</button>
+                <button id="reset-button">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
